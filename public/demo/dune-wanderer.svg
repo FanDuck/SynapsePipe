@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 720" role="img" aria-label="Dune wanderer cinematic landscape">
+  <defs>
+    <linearGradient id="sky" x1="840" y1="0" x2="840" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#25142E"/><stop offset=".42" stop-color="#7A2E47"/><stop offset=".75" stop-color="#E9784C"/><stop offset="1" stop-color="#F6B26B"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop stop-color="#FFE9B8" stop-opacity=".95"/><stop offset=".45" stop-color="#FFB25F" stop-opacity=".8"/><stop offset="1" stop-color="#FF8A4C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="duneFar" x1="840" y1="470" x2="840" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B05B4B"/><stop offset="1" stop-color="#5B2533"/>
+    </linearGradient>
+    <linearGradient id="duneMid" x1="840" y1="510" x2="840" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8A3D3B"/><stop offset="1" stop-color="#351629"/>
+    </linearGradient>
+    <linearGradient id="duneNear" x1="840" y1="560" x2="840" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4D1F2D"/><stop offset="1" stop-color="#120912"/>
+    </linearGradient>
+    <radialGradient id="haze" cx=".5" cy=".5" r=".5">
+      <stop stop-color="#FFD9A0" stop-opacity=".45"/><stop offset="1" stop-color="#FFD9A0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="28"/></filter>
+    <filter id="blurSmall"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".12"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="overlay"/>
+    </filter>
+  </defs>
+  <rect width="1680" height="720" fill="url(#sky)"/>
+  <circle cx="1130" cy="470" r="150" fill="url(#sun)"/>
+  <circle cx="1130" cy="470" r="78" fill="#FFD9A0" opacity=".72" filter="url(#blurSmall)"/>
+  <ellipse cx="1130" cy="500" rx="520" ry="90" fill="url(#haze)" filter="url(#blur)"/>
+  <g opacity=".55" fill="#FBE3C4">
+    <rect x="160" y="180" width="370" height="7" rx="3.5"/>
+    <rect x="90" y="218" width="250" height="5" rx="2.5"/>
+    <rect x="1180" y="160" width="310" height="6" rx="3"/>
+    <rect x="1270" y="200" width="220" height="4" rx="2"/>
+  </g>
+  <path d="M0 470C160 430 280 438 430 480C560 516 700 520 840 500C1000 476 1140 442 1290 456C1440 470 1560 500 1680 488V720H0Z" fill="url(#duneFar)"/>
+  <path d="M0 520C120 490 260 512 390 546C540 586 660 592 800 566C960 536 1100 508 1250 530C1410 554 1540 588 1680 570V720H0Z" fill="url(#duneMid)"/>
+  <path d="M0 588C160 556 300 580 450 618C600 656 760 664 920 630C1080 596 1220 570 1380 600C1500 624 1600 646 1680 632V720H0Z" fill="url(#duneNear)"/>
+  <path d="M1140 470C1180 482 1220 500 1250 524C1210 514 1170 504 1140 498Z" fill="#FFB25F" opacity=".25"/>
+  <g>
+    <path d="M960 594C980 580 1030 580 1050 594L1050 606H960Z" fill="#130A12"/>
+    <rect x="970" y="572" width="70" height="22" rx="5" fill="#1A0E18"/>
+    <rect x="984" y="558" width="38" height="16" rx="4" fill="#24121F"/>
+    <rect x="996" y="562" width="14" height="8" rx="2" fill="#FFD9A0" opacity=".65"/>
+    <circle cx="984" cy="596" r="10" fill="#09050A" stroke="#3A1E28" stroke-width="2"/>
+    <circle cx="1032" cy="596" r="10" fill="#09050A" stroke="#3A1E28" stroke-width="2"/>
+    <path d="M958 593C944 582 940 574 944 566C952 572 962 580 968 586Z" fill="#150A12"/>
+    <path d="M1048 586L1066 580L1068 590L1052 598Z" fill="#09050A"/>
+    <path d="M956 604C930 616 900 622 866 620C900 610 926 602 950 598Z" fill="#FFD9A0" opacity=".18" filter="url(#blurSmall)"/>
+  </g>
+  <g stroke="#FFD9A0" stroke-opacity=".12" stroke-width="1">
+    <path d="M0 680H1680M0 704H1680"/>
+  </g>
+  <rect width="1680" height="720" filter="url(#grain)" opacity=".34"/>
+  <rect x="0" y="0" width="1680" height="720" fill="none" stroke="#000" stroke-opacity=".3" stroke-width="36"/>
+</svg>

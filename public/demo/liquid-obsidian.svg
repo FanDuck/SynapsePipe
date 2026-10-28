@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1080" role="img" aria-label="Liquid obsidian perfume product shot">
+  <defs>
+    <radialGradient id="bg" cx=".5" cy=".35" r=".85">
+      <stop stop-color="#191129"/><stop offset=".55" stop-color="#09070F"/><stop offset="1" stop-color="#030205"/>
+    </radialGradient>
+    <radialGradient id="halo" cx=".5" cy=".5" r=".5">
+      <stop stop-color="#C4B5FD" stop-opacity=".32"/><stop offset=".55" stop-color="#7C3AED" stop-opacity=".1"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#E9D5FF"/><stop offset=".22" stop-color="#6D28D9"/><stop offset=".5" stop-color="#0F0A1A"/><stop offset=".74" stop-color="#8B5CF6"/><stop offset="1" stop-color="#EDE9FE"/>
+    </linearGradient>
+    <linearGradient id="bottle" x1="560" y1="300" x2="880" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A2037"/><stop offset=".32" stop-color="#07060B"/><stop offset=".55" stop-color="#171022"/><stop offset=".8" stop-color="#050409"/><stop offset="1" stop-color="#1D1428"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#F5F3FF" stop-opacity=".7"/><stop offset=".5" stop-color="#F5F3FF" stop-opacity="0"/><stop offset="1" stop-color="#F5F3FF" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="liquid" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#0D0B16"/><stop offset=".5" stop-color="#241A35"/><stop offset="1" stop-color="#09070F"/>
+    </linearGradient>
+    <radialGradient id="pool" cx=".5" cy=".3" r=".7">
+      <stop stop-color="#7C3AED" stop-opacity=".5"/><stop offset=".5" stop-color="#22D3EE" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+    <filter id="blurSmall"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".08"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="overlay"/>
+    </filter>
+    <clipPath id="frame"><rect width="1440" height="1080"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1440" height="1080" fill="url(#bg)"/>
+    <ellipse cx="720" cy="450" rx="520" ry="440" fill="url(#halo)"/>
+    <ellipse cx="720" cy="760" rx="600" ry="250" fill="url(#pool)"/>
+    <rect y="700" width="1440" height="380" fill="url(#liquid)"/>
+    <ellipse cx="720" cy="720" rx="620" ry="120" fill="#0A0712" stroke="#3B2B57" stroke-width="1"/>
+    <g opacity=".35">
+      <path d="M80 760C260 720 400 790 560 748C720 706 860 730 1000 770C1140 810 1290 790 1380 750" fill="none" stroke="#C4B5FD" stroke-width="1.5"/>
+      <path d="M120 820C320 780 470 850 650 810C830 770 950 796 1090 836C1210 870 1330 852 1400 820" fill="none" stroke="#67E8F9" stroke-width="1" opacity=".6"/>
+      <path d="M60 890C280 850 440 916 640 880C840 844 1010 860 1170 900C1280 928 1360 920 1410 900" fill="none" stroke="#C4B5FD" stroke-width="1" opacity=".4"/>
+    </g>
+
+    <g>
+      <ellipse cx="720" cy="850" rx="220" ry="34" fill="#000" opacity=".7" filter="url(#blur)"/>
+      <path d="M714 262H726L760 328V358H680V328L714 262Z" fill="#0B0812" stroke="#4C3A66" stroke-width="1"/>
+      <path d="M664 842C664 856 690 870 720 870C750 870 776 856 776 842V456H664V842Z" fill="url(#bottle)" stroke="#4B3A63" stroke-width="1.4"/>
+      <path d="M620 480L664 430V842C664 858 640 872 620 860V480Z" fill="#0B0812" opacity=".9"/>
+      <path d="M820 480L776 430V842C776 858 800 872 820 860V480Z" fill="#0B0812" opacity=".9"/>
+      <path d="M664 430L690 406H750L776 430V458H664V430Z" fill="#21172F" stroke="#6D5A86" stroke-width="1"/>
+      <path d="M665 478V840" stroke="url(#edge)" stroke-width="2.5" opacity=".8"/>
+      <path d="M774 478V840" stroke="url(#edge)" stroke-width="2" opacity=".6"/>
+      <path d="M700 500L720 560L742 500L770 520L744 590L720 620L694 586L670 516Z" fill="#F5F3FF" opacity=".07"/>
+      <path d="M676 820C700 812 742 812 766 820" stroke="#C4B5FD" stroke-opacity=".3" stroke-width="1.5"/>
+      <rect x="694" y="368" width="52" height="42" rx="4" fill="#120D1C" stroke="#6D5A86" stroke-width="1"/>
+      <path d="M702 376H738V400H702Z" fill="#7C3AED" opacity=".18"/>
+      <path d="M720 304V368" stroke="#C4B5FD" stroke-opacity=".25" stroke-width="1"/>
+    </g>
+
+    <g opacity=".5">
+      <path d="M664 870C690 884 748 884 776 870V916H664Z" fill="#7C3AED" opacity=".25" filter="url(#blurSmall)"/>
+      <path d="M620 860C650 880 790 880 820 860V900C780 918 660 918 620 900Z" fill="#C4B5FD" opacity=".1" filter="url(#blurSmall)"/>
+    </g>
+
+    <g fill="#FDE68A">
+      <circle cx="492" cy="420" r="2.4" opacity=".75"/><circle cx="936" cy="366" r="1.8" opacity=".6"/>
+      <circle cx="398" cy="620" r="1.6" opacity=".5"/><circle cx="1060" cy="560" r="2.1" opacity=".7"/>
+      <circle cx="560" cy="286" r="1.3" opacity=".5"/><circle cx="878" cy="250" r="2" opacity=".6"/>
+      <circle cx="330" cy="780" r="1.7" opacity=".5"/><circle cx="1108" cy="760" r="1.4" opacity=".5"/>
+    </g>
+    <g fill="#E9D5FF">
+      <circle cx="600" cy="540" r="1.2" opacity=".4"/><circle cx="860" cy="650" r="1.4" opacity=".4"/>
+      <circle cx="520" cy="350" r="1" opacity=".3"/><circle cx="980" cy="470" r="1.2" opacity=".35"/>
+    </g>
+    <rect width="1440" height="1080" filter="url(#grain)" opacity=".3"/>
+    <rect width="1440" height="1080" fill="none" stroke="#000" stroke-opacity=".4" stroke-width="40"/>
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1440" role="img" aria-label="Lonely analog gas station at dusk">
+  <defs>
+    <linearGradient id="sky" x1="540" y1="0" x2="540" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B3157"/><stop offset=".35" stop-color="#7A5170"/><stop offset=".65" stop-color="#C98073"/><stop offset=".88" stop-color="#E9B27E"/><stop offset="1" stop-color="#F3C995"/>
+    </linearGradient>
+    <linearGradient id="mountains" x1="540" y1="700" x2="540" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4B3A58"/><stop offset="1" stop-color="#2A2038"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="540" y1="940" x2="540" y2="1440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3A2A34"/><stop offset=".5" stop-color="#211722"/><stop offset="1" stop-color="#0C080E"/>
+    </linearGradient>
+    <linearGradient id="canopy" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#2A1E26"/><stop offset="1" stop-color="#120C12"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFE2A8"/><stop offset="1" stop-color="#FFB45E"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx=".5" cy=".5" r=".5">
+      <stop stop-color="#FFE8B8" stop-opacity=".9"/><stop offset=".45" stop-color="#FFC46B" stop-opacity=".35"/><stop offset="1" stop-color="#FFC46B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop stop-color="#FFE3B0" stop-opacity=".85"/><stop offset=".4" stop-color="#F6A56B" stop-opacity=".4"/><stop offset="1" stop-color="#F6A56B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="24"/></filter>
+    <filter id="blurSmall"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="overlay"/>
+    </filter>
+    <clipPath id="frame"><rect width="1080" height="1440"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1080" height="1440" fill="url(#sky)"/>
+    <circle cx="760" cy="810" r="170" fill="url(#sun)"/>
+    <circle cx="760" cy="810" r="58" fill="#FFE8BC" opacity=".7" filter="url(#blurSmall)"/>
+    <g opacity=".45" fill="#FBE3D0">
+      <rect x="90" y="170" width="390" height="7" rx="3.5"/>
+      <rect x="40" y="210" width="270" height="5" rx="2.5"/>
+      <rect x="600" y="260" width="360" height="6" rx="3"/>
+      <rect x="720" y="300" width="260" height="4" rx="2"/>
+      <rect x="300" y="360" width="470" height="5" rx="2.5" opacity=".6"/>
+    </g>
+    <path d="M0 900L170 740L300 842L450 690L620 858L760 760L900 870L1010 800L1080 846V1020H0Z" fill="url(#mountains)" opacity=".92"/>
+    <path d="M0 970L180 880L340 946L520 860L690 952L860 900L1080 970V1060H0Z" fill="#2A1E30" opacity=".8"/>
+    <path d="M0 1010H1080V1440H0Z" fill="url(#ground)"/>
+    <path d="M360 1020L490 1440H760L620 1020Z" fill="#1A111A"/>
+    <path d="M360 1020L490 1440M620 1020L760 1440" stroke="#D8A98A" stroke-opacity=".12" stroke-width="3"/>
+    <path d="M500 1050L525 1440M590 1050L565 1440" stroke="#E9C29A" stroke-opacity=".18" stroke-width="4"/>
+
+    <g>
+      <path d="M640 1010V770H760V1010" fill="#181018"/>
+      <rect x="618" y="748" width="760" height="44" rx="6" fill="url(#canopy)" stroke="#4A3340" stroke-width="2"/>
+      <rect x="620" y="786" width="756" height="18" fill="#100A10"/>
+      <path d="M650 786H1330" stroke="#FFD9A0" stroke-opacity=".35" stroke-width="4"/>
+      <ellipse cx="900" cy="820" rx="380" ry="140" fill="#FFB45E" opacity=".13" filter="url(#blur)"/>
+      <rect x="800" y="968" width="120" height="180" rx="6" fill="#1A1018" stroke="#4A3340" stroke-width="2"/>
+      <rect x="790" y="944" width="140" height="34" rx="5" fill="#0E090F"/>
+      <rect x="814" y="992" width="92" height="62" rx="4" fill="#FFD297" opacity=".7"/>
+      <rect x="814" y="992" width="92" height="62" rx="4" fill="none" stroke="#FFE2A8" stroke-opacity=".5"/>
+      <path d="M814 1054H906M860 992V1054" stroke="#2A1A22" stroke-width="4"/>
+      <rect x="820" y="1090" width="82" height="48" rx="4" fill="#0A060A" stroke="#5B4150" stroke-width="1.2"/>
+      <path d="M828 1108H894M828 1120H880" stroke="#FFD9A0" stroke-opacity=".35" stroke-width="2"/>
+      <rect x="640" y="798" width="34" height="150" rx="8" fill="#0D080D" stroke="#4A3340" stroke-width="1.5"/>
+      <rect x="646" y="814" width="22" height="62" rx="6" fill="url(#warm)" opacity=".7"/>
+      <rect x="650" y="960" width="14" height="120" rx="4" fill="#140D14"/>
+      <circle cx="658" cy="1090" r="32" fill="#FFD297" opacity=".12" filter="url(#blurSmall)"/>
+    </g>
+
+    <g>
+      <rect x="1210" y="868" width="12" height="420" fill="#1D121B"/>
+      <path d="M1192 882H1240M1192 900H1240" stroke="#2E1E29" stroke-width="5"/>
+      <path d="M1180 1288H1260" stroke="#2A1B24" stroke-width="7"/>
+      <path d="M1222 1260L1240 1310" stroke="#2A1B24" stroke-width="4"/>
+    </g>
+
+    <g>
+      <path d="M0 1160C100 1140 180 1150 260 1170" fill="none" stroke="#D8A98A" stroke-opacity=".15" stroke-width="2"/>
+      <path d="M130 1230L180 1244L160 1270L120 1256Z" fill="#171017"/>
+      <path d="M930 1300L960 1294L972 1320L938 1328Z" fill="#171017"/>
+      <path d="M760 1150C820 1138 860 1142 902 1156" fill="none" stroke="#D8A98A" stroke-opacity=".12" stroke-width="2"/>
+    </g>
+
+    <g fill="#F5D7A8">
+      <circle cx="250" cy="1080" r="1.8" opacity=".4"/><circle cx="540" cy="1120" r="1.3" opacity=".3"/>
+      <circle cx="900" cy="1160" r="2" opacity=".35"/><circle cx="1020" cy="1080" r="1.4" opacity=".3"/>
+    </g>
+    <rect width="1080" height="1440" fill="url(#grain)" opacity=".45"/>
+    <rect x="0" y="0" width="1080" height="1440" fill="none" stroke="#0A0609" stroke-opacity=".45" stroke-width="60"/>
+    <ellipse cx="540" cy="720" rx="760" ry="820" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="180" filter="url(#blur)"/>
+  </g>
+</svg>
