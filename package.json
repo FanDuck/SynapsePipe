@@ -4,6 +4,32 @@
   "private": true,
   "description": "Next-gen Local-first AIGC Workbench & Creative Pipeline",
   "license": "MIT",
+  "author": "FanDuck (https://github.com/FanDuck)",
+  "contributors": [
+    {
+      "name": "SynapsePipe contributors",
+      "url": "https://github.com/FanDuck/SynapsePipe"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FanDuck/SynapsePipe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FanDuck/SynapsePipe/issues"
+  },
+  "homepage": "https://github.com/FanDuck/SynapsePipe#readme",
+  "keywords": [
+    "aigc",
+    "ai",
+    "prompt-engineering",
+    "prompt-library",
+    "local-first",
+    "nextjs",
+    "sqlite",
+    "drizzle-orm",
+    "creative-tools"
+  ],
   "engines": {
     "node": ">=20.11.0"
   },

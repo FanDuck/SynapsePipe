@@ -23,7 +23,9 @@
   <a href="#-快速开始">快速开始</a> ·
   <a href="#-架构">架构</a> ·
   <a href="#-功能">功能</a> ·
-  <a href="#-docker">Docker</a>
+  <a href="#-docker">Docker</a> ·
+  <a href="#license-policy">开源协议</a> ·
+  <a href="#acknowledgements">鸣谢</a>
 </p>
 
 ---
@@ -238,11 +240,115 @@ npm run build
 
 提交信息遵循 [Conventional Commits](https://www.conventionalcommits.org/)，例如 `feat:`, `fix:`, `style:`, `docs:`, `chore:`。项目遵循 [Contributor Covenant](./CODE_OF_CONDUCT.md)。
 
+<a id="license-policy"></a>
+
+## 开源协议与衍生开发规范
+
+### 许可证
+
+SynapsePipe 以 **[MIT License](./LICENSE)** 开源。
+
+**Copyright © 2026 FanDuck and SynapsePipe contributors.**
+
+你可以自由使用、复制、修改、合并、发布、分发、再许可和/或销售本软件的副本，但必须在所有副本或实质性部分中保留原始版权声明与许可声明。软件按 **“原样”** 提供，不附带任何明示或默示担保。完整且具有控制力的许可文本见 [`LICENSE`](./LICENSE)。
+
+### 二次创作、衍生开发、封装分发与商业使用
+
+我们欢迎 Fork、二次开发、翻译、集成与商业部署。但如果你修改、重构、改名、重新封装、分发或托管 SynapsePipe 的衍生版本，必须遵守以下项目规范：
+
+#### 1. 署名与溯源（必须）
+
+你必须在**显著位置**保留并展示原项目身份：
+
+- 你的 **README 顶部**；
+- 产品 UI 中的 **关于 / 鸣谢页面**（或同等的可见致谢位置）。
+
+署名内容必须包含：
+
+- 原项目名称 **SynapsePipe**；
+- 原仓库链接 **https://github.com/FanDuck/SynapsePipe**；
+- 原作者 **FanDuck**；
+- 明确说明你的版本是基于原项目的衍生作品。
+
+如果你以托管服务 / SaaS 形式提供衍生版本，还应在产品页脚或关于页添加可见的 **“Powered by SynapsePipe”** 链接。
+
+推荐直接使用的署名模板：
+
+> **本项目基于 FanDuck 的 SynapsePipe** — https://github.com/FanDuck/SynapsePipe
+> 遵循 MIT License。本作品为独立衍生版本，未获得原作者背书或隶属关系。
+
+#### 2. 协议继承与原始版权声明
+
+- 在每个衍生分发版本中包含**完整的原始 MIT License 文本**。
+- 保留**原始版权声明**（`Copyright © 2026 FanDuck and SynapsePipe contributors`）。
+- 清晰标注你修改过的文件与界面，不得将未修改的原始代码错误声明为自己的原创。
+- 如果引入第三方代码、素材、字体、模型或数据集，请自行核验其许可证，并保留相应的署名与许可声明。
+
+#### 3. 免责与不背书声明
+
+- **不得**明示或暗示原作者 FanDuck 或 SynapsePipe 项目为你的衍生版本提供背书、赞助、认证或支持。
+- **不得**以误导性方式使用 SynapsePipe 名称或 Logo，使他人误以为你的版本是官方版本。
+- **不得**将原项目作为你分发版本的商业担保、服务等级承诺、安全认证或合规保证。
+- 必须明确说明衍生版本由你独立维护，并由你自行承担责任。
+
+### 商业使用
+
+MIT License 允许商业使用。我们欢迎商业化的衍生作品，但必须同时满足上述署名、协议继承与不背书要求。你需自行负责产品声明、用户协议、隐私政策、安全实践与合规义务。
+
+### 说明与法律边界
+
+本节记录了 SynapsePipe 项目对署名、出处与项目身份的社区规范。它**不减少、不替代、也不额外限制** MIT License 就源代码授予的权利；如出现法律冲突，以 [`LICENSE`](./LICENSE) 中的 MIT 文本为准。SynapsePipe 名称与 Logo 用于识别原项目，不构成任何商标注册或背书授权。如果你不确定某种使用方式是否合适，请先通过 Issue / Discussion 与我们沟通。
+
+<a id="acknowledgements"></a>
+
+## 鸣谢与致敬
+
+SynapsePipe 建立在开源社区的工作之上。我们诚挚感谢以下项目、团队与许可证，让这个工作台成为可能。
+
+| 上游项目 | 在项目中的角色 | 许可证 | 出处 |
+| --- | --- | --- | --- |
+| [Next.js](https://nextjs.org/) | App Router、RSC、Server Actions、Route Handlers | MIT | [GitHub](https://github.com/vercel/next.js) |
+| [React](https://react.dev/) | UI 运行时 | MIT | [GitHub](https://github.com/facebook/react) |
+| [TypeScript](https://www.typescriptlang.org/) | 类型系统与编译器 | Apache-2.0 | [GitHub](https://github.com/microsoft/TypeScript) |
+| [Tailwind CSS](https://tailwindcss.com/) | 原子化样式与设计令牌 | MIT | [GitHub](https://github.com/tailwindlabs/tailwindcss) |
+| [shadcn/ui](https://ui.shadcn.com/) | 组件架构与基础组件 | MIT | [GitHub](https://github.com/shadcn-ui/ui) |
+| [Radix UI](https://www.radix-ui.com/) | 无障碍 Headless 基础组件 | MIT | [GitHub](https://github.com/radix-ui/primitives) |
+| [Lucide](https://lucide.dev/) | 图标系统 | ISC | [GitHub](https://github.com/lucide-icons/lucide) |
+| [SQLite](https://sqlite.org/) | 嵌入式关系型数据库 | Public Domain | [sqlite.org](https://sqlite.org/copyright.html) |
+| [Drizzle ORM](https://orm.drizzle.team/) | 类型安全 Schema 与查询层 | Apache-2.0 | [GitHub](https://github.com/drizzle-team/drizzle-orm) |
+| [better-sqlite3](https://github.com/WiseLibs/better-sqlite3) | 同步 SQLite 驱动 | MIT | [GitHub](https://github.com/WiseLibs/better-sqlite3) |
+| [Framer Motion](https://www.framer.com/motion/) | 动效与交互系统 | MIT | [GitHub](https://github.com/motiondivision/motion) |
+| [Sonner](https://sonner.emilkowal.ski/) | Toast 轻提示 | MIT | [GitHub](https://github.com/emilkowalski/sonner) |
+| [Geist](https://vercel.com/font) | 界面字体 | SIL OFL 1.1 | [GitHub](https://github.com/vercel/geist-font) |
+
+更完整的版本、许可证与素材出处清单（包含开发工具、Radix 子包等）请见 [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md)。
+
+- **演示视觉资产**：`public/demo/` 下的 8 件 SVG 作品为本仓库专门创作。
+- **设计启发**：视觉方向参考了 Linear、Raycast 与 Vercel 的工艺感；未复制任何专有代码、品牌素材或 UI 截图。SynapsePipe 与这些公司没有隶属关系。
+- **服务与模型名称**：Midjourney、FLUX、OpenAI、DeepSeek、OpenRouter、Runway、Kling、Sora、Veo、Ollama、LM Studio、SiliconFlow 等名称归各自所有者所有，此处仅用于客观描述。
+
+### 引用
+
+如果你在文章、研究笔记、课程或衍生项目中引用 SynapsePipe，建议使用：
+
+```bibtex
+@software{synapsepipe2026,
+  author  = {FanDuck and SynapsePipe contributors},
+  title   = {SynapsePipe: Next-gen Local-first AIGC Workbench},
+  year    = {2026},
+  version = {1.0.0},
+  url     = {https://github.com/FanDuck/SynapsePipe},
+  license = {MIT}
+}
+```
+
+机器可读的引用元数据见 [`CITATION.cff`](./CITATION.cff)。
+
 ## 许可证
 
-[MIT](./LICENSE) © 2026 SynapsePipe contributors。
+[MIT](./LICENSE) © 2026 FanDuck and SynapsePipe contributors。
 
-`public/demo/` 内的演示视觉资产为本仓库专门创作。文中出现的模型与服务名称归各自所有者所有，SynapsePipe 与它们没有隶属关系。
+完整的衍生开发规范见上方「开源协议与衍生开发规范」。文中出现的模型与服务名称归各自所有者所有，SynapsePipe 与它们没有隶属关系。
 
 ---
 

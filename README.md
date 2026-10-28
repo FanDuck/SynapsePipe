@@ -26,7 +26,8 @@
   <a href="#-architecture">Architecture</a> ·
   <a href="#-features">Features</a> ·
   <a href="#-docker">Docker</a> ·
-  <a href="#-roadmap">Roadmap</a>
+  <a href="#license-policy">License policy</a> ·
+  <a href="#acknowledgements">Credits</a>
 </p>
 
 ---
@@ -230,6 +231,10 @@ SynapsePipe/
 │  └─ og.png
 ├─ data/                        # Local runtime only (gitignored)
 ├─ docs/screenshots/
+├─ THIRD_PARTY_NOTICES.md       # Dependency licenses and upstream credits
+├─ CITATION.cff                 # Machine-readable citation metadata
+├─ CONTRIBUTING.md
+├─ SECURITY.md
 ├─ Dockerfile
 ├─ docker-compose.yml
 ├─ drizzle.config.ts
@@ -300,11 +305,115 @@ npm run build
 
 Use [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `style:`, `docs:`, `chore:`). This project follows the [Contributor Covenant](./CODE_OF_CONDUCT.md).
 
+<a id="license-policy"></a>
+
+## License & Derivative Works Policy
+
+### License
+
+SynapsePipe is open source under the **[MIT License](./LICENSE)**.
+
+**Copyright © 2026 FanDuck and SynapsePipe contributors.**
+
+You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, subject to the condition that the copyright notice and permission notice are included in all copies or substantial portions of the software. The software is provided **“as is”**, without warranty of any kind. The full controlling text is in [`LICENSE`](./LICENSE).
+
+### Secondary creation, derivative development, repackaging & commercial use
+
+We welcome forks, derivative projects, translations, integrations, and commercial deployments. If you modify, refactor, rebrand, repackage, redistribute, or host a derivative version of SynapsePipe, the following project requirements apply:
+
+#### 1. Attribution & provenance
+
+You **must** retain and display the original project identity in a **prominent location**:
+
+- the **top of your README**, and
+- an **About / Acknowledgements page in the product UI** (or an equivalent visible credits surface).
+
+The attribution must include:
+
+- the original project name **SynapsePipe**;
+- the original repository URL **https://github.com/FanDuck/SynapsePipe**;
+- the original author **FanDuck**;
+- a statement that your version is a derivative work.
+
+For hosted or SaaS deployments, add a visible **“Powered by SynapsePipe”** link in the product footer or About page.
+
+Recommended copy-paste notice:
+
+> **Based on SynapsePipe by FanDuck** — https://github.com/FanDuck/SynapsePipe
+> Licensed under the MIT License. This is an independent derivative work and is not endorsed by or affiliated with the original author.
+
+#### 2. License inheritance & notices
+
+- Include the **complete original MIT License text** in every derivative distribution.
+- Retain the **original copyright notice** (`Copyright © 2026 FanDuck and SynapsePipe contributors`).
+- Clearly mark files and interfaces that you changed, and do not misrepresent the origin of unmodified code.
+- If you add third-party code, assets, fonts, models, or datasets, verify their licenses and include the required notices and attribution.
+
+#### 3. No endorsement, sponsorship, or commercial guarantee
+
+- Do **not** state or imply that the original author, FanDuck, or the SynapsePipe project endorses, sponsors, certifies, or supports your derivative version.
+- Do **not** use the SynapsePipe name or logo in a way that suggests your version is the official product.
+- Do **not** present the original project as a commercial warranty, service-level guarantee, or security certification for your distribution.
+- Make it clear that your derivative is independently maintained and provided under your own responsibility.
+
+### Commercial use
+
+Commercial use is permitted by the MIT License. Commercial derivative products are welcome, provided they comply with the attribution, license-inheritance, and no-endorsement requirements above. You are responsible for your own product claims, user agreements, privacy policy, security posture, and legal compliance.
+
+### Scope & legal note
+
+This policy records the SynapsePipe project's attribution, provenance, and identity expectations. It does **not** reduce, replace, or add conditions to the rights granted by the MIT License for the source code; where a legal conflict exists, the [MIT License](./LICENSE) controls the licensed code. The SynapsePipe name and logo identify the original project; no trademark registration or endorsement right is granted. If you are unsure whether a use is appropriate, open an issue or discussion before publishing.
+
+<a id="acknowledgements"></a>
+
+## Acknowledgements & Upstream Credits
+
+SynapsePipe stands on the work of the open-source community. We gratefully acknowledge the projects, teams, and licenses that make this workbench possible.
+
+| Upstream project | Role in SynapsePipe | License | Source |
+| --- | --- | --- | --- |
+| [Next.js](https://nextjs.org/) | App Router, RSC, Server Actions, Route Handlers | MIT | [GitHub](https://github.com/vercel/next.js) |
+| [React](https://react.dev/) | UI runtime | MIT | [GitHub](https://github.com/facebook/react) |
+| [TypeScript](https://www.typescriptlang.org/) | Type system and compiler | Apache-2.0 | [GitHub](https://github.com/microsoft/TypeScript) |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first styling and design tokens | MIT | [GitHub](https://github.com/tailwindlabs/tailwindcss) |
+| [shadcn/ui](https://ui.shadcn.com/) | Component architecture and primitives | MIT | [GitHub](https://github.com/shadcn-ui/ui) |
+| [Radix UI](https://www.radix-ui.com/) | Accessible headless primitives | MIT | [GitHub](https://github.com/radix-ui/primitives) |
+| [Lucide](https://lucide.dev/) | Icon system | ISC | [GitHub](https://github.com/lucide-icons/lucide) |
+| [SQLite](https://sqlite.org/) | Embedded relational database | Public Domain | [sqlite.org](https://sqlite.org/copyright.html) |
+| [Drizzle ORM](https://orm.drizzle.team/) | Typed schema and query layer | Apache-2.0 | [GitHub](https://github.com/drizzle-team/drizzle-orm) |
+| [better-sqlite3](https://github.com/WiseLibs/better-sqlite3) | Synchronous SQLite driver | MIT | [GitHub](https://github.com/WiseLibs/better-sqlite3) |
+| [Framer Motion](https://www.framer.com/motion/) | Motion and interaction system | MIT | [GitHub](https://github.com/motiondivision/motion) |
+| [Sonner](https://sonner.emilkowal.ski/) | Toast notifications | MIT | [GitHub](https://github.com/emilkowalski/sonner) |
+| [Geist](https://vercel.com/font) | Interface typeface | SIL OFL 1.1 | [GitHub](https://github.com/vercel/geist-font) |
+
+A complete version and license inventory — including dev tooling, Radix packages, and asset provenance — is maintained in [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md).
+
+- **Demo artwork**: the eight SVGs under `public/demo/` were authored specifically for this repository.
+- **Design inspiration**: the visual direction is informed by the craft of Linear, Raycast, and Vercel. No proprietary code, brand assets, or copied UI screenshots are included. SynapsePipe is not affiliated with these companies.
+- **Provider names**: Midjourney, FLUX, OpenAI, DeepSeek, OpenRouter, Runway, Kling, Sora, Veo, Ollama, LM Studio, SiliconFlow, and other model/provider names are trademarks of their respective owners; their use is descriptive only.
+
+### Citation
+
+If you reference SynapsePipe in an article, research note, course, or derivative project, please cite:
+
+```bibtex
+@software{synapsepipe2026,
+  author  = {FanDuck and SynapsePipe contributors},
+  title   = {SynapsePipe: Next-gen Local-first AIGC Workbench},
+  year    = {2026},
+  version = {1.0.0},
+  url     = {https://github.com/FanDuck/SynapsePipe},
+  license = {MIT}
+}
+```
+
+Machine-readable citation metadata is available in [`CITATION.cff`](./CITATION.cff).
+
 ## License
 
-[MIT](./LICENSE) © 2026 SynapsePipe contributors.
+[MIT](./LICENSE) © 2026 FanDuck and SynapsePipe contributors.
 
-The bundled demo artwork in `public/demo/` was authored specifically for this repository. Provider names and model names are trademarks of their respective owners; SynapsePipe is not affiliated with them.
+The complete derivative-works policy is documented above. Provider names and model names are trademarks of their respective owners; SynapsePipe is not affiliated with them.
 
 ---
 

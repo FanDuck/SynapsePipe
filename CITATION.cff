@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you reference SynapsePipe in research, documentation, or a derivative project, please cite it using the metadata below."
+title: "SynapsePipe: Next-gen Local-first AIGC Workbench & Creative Pipeline"
+abstract: >-
+  SynapsePipe is a local-first AIGC workbench combining a structured prompt library,
+  an AI prompt expansion studio, and a traceable asset gallery. It runs as a single
+  Next.js application with SQLite and Drizzle ORM, and keeps creative data on the user's device.
+authors:
+  - name: "FanDuck and SynapsePipe contributors"
+type: software
+version: 1.0.0
+date-released: "2026-10-28"
+license: MIT
+repository-code: "https://github.com/FanDuck/SynapsePipe"
+url: "https://github.com/FanDuck/SynapsePipe"
+keywords:
+  - aigc
+  - ai
+  - prompt-engineering
+  - prompt-library
+  - local-first
+  - nextjs
+  - sqlite
+  - creative-tools

@@ -40,6 +40,8 @@ RUN groupadd --system --gid 1001 nodejs \
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:nodejs /app/LICENSE ./LICENSE
+COPY --from=builder --chown=nextjs:nodejs /app/THIRD_PARTY_NOTICES.md ./THIRD_PARTY_NOTICES.md
 
 # The image ships an empty data volume; never bake local runtime data in.
 RUN rm -rf /app/data && mkdir -p /app/data && chown -R nextjs:nodejs /app/data

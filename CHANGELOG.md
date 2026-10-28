@@ -2,6 +2,18 @@
 
 All notable changes to SynapsePipe are documented here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Docs & open-source compliance
+
+- Added a full **License & Derivative Works Policy** to both READMEs: attribution/provenance requirements, MIT license inheritance, no-endorsement rules, commercial-use guidance, and derivative distribution expectations.
+- Added an **Acknowledgements & Upstream Credits** section with verified licenses for Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, Radix UI, Lucide, SQLite, Drizzle ORM, better-sqlite3, Framer Motion, Sonner, and Geist.
+- Added [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md) with a complete direct-dependency license inventory and asset provenance.
+- Added [`CITATION.cff`](./CITATION.cff) for machine-readable citation.
+- Reworked [`CONTRIBUTING.md`](./CONTRIBUTING.md) into a Chinese-first, bilingual-heading guide covering PR standards, code style, contributor copyright/originality certification, and derivative-work norms.
+- Added open-source compliance checkboxes to the pull request template.
+- Clarified the original copyright line in [`LICENSE`](./LICENSE) as `Copyright © 2026 FanDuck and SynapsePipe contributors`.
+
 ## [1.0.0] — 2026-10-28
 
 The first public release of SynapsePipe: a local-first AIGC workbench.
