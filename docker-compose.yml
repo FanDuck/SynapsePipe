@@ -1,0 +1,35 @@
+name: synapsepipe
+
+services:
+  synapsepipe:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: synapsepipe:local
+    container_name: synapsepipe
+    restart: unless-stopped
+    ports:
+      - "${SYNAPSEPIPE_PORT:-3000}:3000"
+    environment:
+      SYNAPSE_DATA_DIR: /app/data
+      SYNAPSE_SECRET: ${SYNAPSE_SECRET:-}
+      SYNAPSE_DISABLE_DEMO_SEED: ${SYNAPSE_DISABLE_DEMO_SEED:-0}
+      NEXT_PUBLIC_APP_URL: ${NEXT_PUBLIC_APP_URL:-http://localhost:3000}
+    volumes:
+      - synapsepipe_data:/app/data
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3000/api/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 25s
+
+volumes:
+  synapsepipe_data:
+    name: synapsepipe_data

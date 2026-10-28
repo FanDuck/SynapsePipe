@@ -1,0 +1,48 @@
+name: Feature request
+description: Suggest an improvement to SynapsePipe
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        SynapsePipe stays local-first and single-process. Please describe how the idea fits that model.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the creative workflow friction, not just the desired UI.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Prompt Library
+        - AI Prompt Studio
+        - Asset Gallery
+        - Data / backup
+        - Design / accessibility
+        - Deployment
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Local-first constraints
+      options:
+        - label: This can work without a mandatory cloud account or hosted backend.
+          required: true
+        - label: I am willing to help test or implement this.
