@@ -2,7 +2,9 @@
 
 All notable changes to SynapsePipe are documented here. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
+## [1.0.1] — 2026-10-28
+
+**Documentation & Compliance Patch** — no application behavior changes.
 
 ### Docs & open-source compliance
 
@@ -13,6 +15,8 @@ All notable changes to SynapsePipe are documented here. The format is based on [
 - Reworked [`CONTRIBUTING.md`](./CONTRIBUTING.md) into a Chinese-first, bilingual-heading guide covering PR standards, code style, contributor copyright/originality certification, and derivative-work norms.
 - Added open-source compliance checkboxes to the pull request template.
 - Clarified the original copyright line in [`LICENSE`](./LICENSE) as `Copyright © 2026 FanDuck and SynapsePipe contributors`.
+- Runtime Docker image now includes `LICENSE` and `THIRD_PARTY_NOTICES.md`.
+- Updated application/package/citation version metadata to `1.0.1`.
 
 ## [1.0.0] — 2026-10-28
 
@@ -65,4 +69,5 @@ The first public release of SynapsePipe: a local-first AIGC workbench.
 - No telemetry, no accounts, no third-party analytics.
 - Local-only by default; no built-in auth. See [SECURITY.md](./SECURITY.md).
 
+[1.0.1]: https://github.com/FanDuck/SynapsePipe/releases/tag/v1.0.1
 [1.0.0]: https://github.com/FanDuck/SynapsePipe/releases/tag/v1.0.0

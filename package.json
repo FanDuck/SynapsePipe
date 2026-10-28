@@ -1,6 +1,6 @@
 {
   "name": "synapsepipe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Next-gen Local-first AIGC Workbench & Creative Pipeline",
   "license": "MIT",

@@ -336,7 +336,7 @@ SynapsePipe 建立在开源社区的工作之上。我们诚挚感谢以下项�
   author  = {FanDuck and SynapsePipe contributors},
   title   = {SynapsePipe: Next-gen Local-first AIGC Workbench},
   year    = {2026},
-  version = {1.0.0},
+  version = {1.0.1},
   url     = {https://github.com/FanDuck/SynapsePipe},
   license = {MIT}
 }

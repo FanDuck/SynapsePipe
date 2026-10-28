@@ -2,7 +2,7 @@ export const APP_NAME = "SynapsePipe";
 export const APP_TAGLINE = "Next-gen Local-first AIGC Workbench & Creative Pipeline";
 export const APP_DESCRIPTION =
   "一个本地优先的 AIGC 创意工作台：结构化 Prompt 库、AI 魔法扩写与可追溯的资产画廊，全部数据留在你自己的设备上。";
-export const APP_VERSION = "1.0.0";
+export const APP_VERSION = "1.0.1";
 export const APP_REPO_URL = "https://github.com/FanDuck/SynapsePipe";
 
 export type Option<T extends string = string> = {

@@ -401,7 +401,7 @@ If you reference SynapsePipe in an article, research note, course, or derivative
   author  = {FanDuck and SynapsePipe contributors},
   title   = {SynapsePipe: Next-gen Local-first AIGC Workbench},
   year    = {2026},
-  version = {1.0.0},
+  version = {1.0.1},
   url     = {https://github.com/FanDuck/SynapsePipe},
   license = {MIT}
 }
